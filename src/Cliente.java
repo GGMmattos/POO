@@ -4,6 +4,7 @@ public class Cliente {
     static int corredorAtual;
     static String setorAtual;
     static int caixaEscolhido;
+    static String pagamento;
     static ArrayList<Produto> carrinho = new ArrayList<Produto>();
 
     public void corredores(){
@@ -295,11 +296,18 @@ public class Cliente {
 
             System.out.println("Escolha o caixa para finalizar a venda:");
             System.out.println("1 - Funcionario: "+Principal.caixas.get(0).getFuncionario().getNome());
-            System.out.println("2 - Funcionario: "+Principal.caixas.get(0).getFuncionario().getNome());
-            System.out.println("3 - Funcionario: "+Principal.caixas.get(0).getFuncionario().getNome());
+            System.out.println("2 - Funcionario: "+Principal.caixas.get(1).getFuncionario().getNome());
+            System.out.println("3 - Funcionario: "+Principal.caixas.get(2).getFuncionario().getNome());
             System.out.println();
             System.out.print("> ");
+
             caixaEscolhido = sc.nextInt();
+            System.out.println("O pagamento será em dinheiro ou  cartao?");
+            pagamento = sc.nextLine().toLowerCase();
+            if(pagamento.equals("cartao")){
+                //System.out.println("Valor total da compra:" +  );
+            }
+            System.out.println(pagamento);
             sc.nextLine();
 
             if(caixaEscolhido < 1 || caixaEscolhido > 3)
