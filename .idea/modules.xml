@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/trab.iml" filepath="$PROJECT_DIR$/trab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Trab POO.iml" filepath="$PROJECT_DIR$/.idea/Trab POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trabalho POO/Trabalho POO.iml" filepath="$PROJECT_DIR$/Trabalho POO/Trabalho POO.iml" />
     </modules>
   </component>
 </project>
