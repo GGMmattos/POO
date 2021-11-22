@@ -137,7 +137,7 @@ public class Principal {
     }
 
     public static void opCliente(){
-        Cliente cliente = new Cliente();
+        Cliente cliente = new Cliente("Gabriel",1000);
         cliente.corredores();
     }
 

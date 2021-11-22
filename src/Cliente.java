@@ -1,11 +1,18 @@
 import java.util.*;
 
 public class Cliente {
+    static String nome;
+    static float valor;
     static int corredorAtual;
     static String setorAtual;
     static int caixaEscolhido;
-    static String pagamento;
+    static String metodoPagamento;
     static ArrayList<Produto> carrinho = new ArrayList<Produto>();
+
+    Cliente(String nome, float valor){
+        this.setNome(nome);
+        this.setValor(valor);
+    }
 
     public void corredores(){
         Scanner sc = new Scanner(System.in);
@@ -44,6 +51,22 @@ public class Cliente {
             Principal.clear();
             Principal.opSistema();
         }
+    }
+
+    public static String getNome() {
+        return nome;
+    }
+
+    public static void setNome(String nome) {
+        Cliente.nome = nome;
+    }
+
+    public static float getValor() {
+        return valor;
+    }
+
+    public static void setValor(float valor) {
+        Cliente.valor = valor;
     }
 
     public void setores(){
@@ -300,16 +323,8 @@ public class Cliente {
             System.out.println("3 - Funcionario: "+Principal.caixas.get(2).getFuncionario().getNome());
             System.out.println();
             System.out.print("> ");
-
             caixaEscolhido = sc.nextInt();
-            System.out.println("O pagamento será em dinheiro ou  cartao?");
-            pagamento = sc.nextLine().toLowerCase();
-            if(pagamento.equals("cartao")){
-                //System.out.println("Valor total da compra:" +  );
-            }
-            System.out.println(pagamento);
-            sc.nextLine();
-
+            Principal.caixas.get(caixaEscolhido);
             if(caixaEscolhido < 1 || caixaEscolhido > 3)
                 throw new InputMismatchException();
 
