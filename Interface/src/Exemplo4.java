@@ -24,18 +24,18 @@ public class Exemplo4 extends JFrame{
 
 
     public Exemplo4() {
-        super("Teste de Paineis");									//enviando para o construtor de JFrame o título da janela
+        super("Teste de Paineis");		//enviando para o construtor de JFrame o título da janela
 
         brdLayout = new BorderLayout();
 
-        Container c = getContentPane();								//pegando o container de JFrame para construir em cima dele
+        Container c = getContentPane();		//pegando o container de JFrame para construir em cima dele
 
-        pnlPrincipal = new JPanel(new GridLayout(6, 0, 5, 5));		//criando o painel de conteúdo
+        pnlPrincipal = new JPanel(new GridLayout(6, 0, 5, 5));	//criando o painel de conteúdo
 
-        c.add(pnlPrincipal, brdLayout.CENTER);						//adicionando o painel principal no centro da tela
+        c.add(pnlPrincipal, brdLayout.CENTER);				//adicionando o painel principal no centro da tela
 
-        lblTexto = new JLabel("Digite o seu nome");					//criando label
-        pnlPrincipal.add(lblTexto);									//adicionando label no painel de conteúdo
+        lblTexto = new JLabel("Digite o seu nome");	//criando label
+        pnlPrincipal.add(lblTexto);							//adicionando label no painel de conteúdo
 
         tfInsercaoNome = new JTextField();
         pnlPrincipal.add(tfInsercaoNome);
@@ -55,14 +55,14 @@ public class Exemplo4 extends JFrame{
         pnlBotoes = new JPanel(new FlowLayout(FlowLayout.RIGHT));	//criando o painel dos botões
         pnlBotoes.setBackground(Color.orange);						//setando uma cor para painel dos botoes
 
-        btnOk = new JButton("Ok");									//criando os botões
+        btnOk = new JButton("Ok");								//criando os botões
         btnCancelar = new JButton("Cancelar");
         btnSavar = new JButton("Salvar");
         pnlBotoes.add(btnSavar);									//adicionando os botões no painel dos botões
         pnlBotoes.add(btnCancelar);
         pnlBotoes.add(btnOk);
 
-        lblResposta = new JLabel("");								//label de resposta
+        lblResposta = new JLabel("");							//label de resposta
         pnlPrincipal.add(lblResposta);
 
         c.add(pnlBotoes, brdLayout.SOUTH);							//adicionando o painel dos botões no container da frame
@@ -115,9 +115,9 @@ public class Exemplo4 extends JFrame{
         });
 
         //setSize(450, 450);
-        //pack();														//ajusta a tela para caberem os elementos inseridos
-        //setLocationRelativeTo(null);								//seta a localização da tela para o centro (null)
-        setVisible(true);											//seta janela como visível
+        //pack();							//ajusta a tela para caberem os elementos inseridos
+        //setLocationRelativeTo(null);		//seta a localização da tela para o centro (null)
+        setVisible(true);					//seta janela como visível
     }
 
 
